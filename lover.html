@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message for You</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: #fff;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+        p {
+            font-size: 1.5em;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px;
+        }
+        .heart {
+            font-size: 4em;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        button {
+            background-color: #fff;
+            color: #ff758c;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: #ff7eb3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>A Special Message for You</h1>
+    <p>Hey [Crush's Name],</p>
+    <p>There are so many things I want to say, but most importantly, I want you to know how special you are to me. Your smile brightens my days, and your presence makes everything better. I'm truly grateful to have you in my life.</p>
+    <p class="heart">❤️</p>
+    <button onclick="showMessage()">Click Me</button>
+
+    <script>
+        function showMessage() {
+            alert('I really like you! Would you like to go out with me?');
+        }
+    </script>
+</body>
+</html>
